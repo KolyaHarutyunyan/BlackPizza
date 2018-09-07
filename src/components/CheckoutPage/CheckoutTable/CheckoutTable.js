@@ -15,9 +15,9 @@ class CheckoutTable extends Component {
                         </tr>
                     </thead>
                     <tbody >
-                        {this.props.reduxState.cart.pizzas.map((nameOfPizza) => {
+                        {this.props.reduxState.cart.pizzas.map((nameOfPizza, i) => {
                             return (
-                                <CheckoutItem nameOfPizza={nameOfPizza} />
+                                <CheckoutItem key={i} nameOfPizza={nameOfPizza} />
                             );
                         }
                         )}

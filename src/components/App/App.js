@@ -13,8 +13,11 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Header/>
-          <Route path="/select" component={SelectPage} />
+          <style>
+            @import url('https://fonts.googleapis.com/css?family=Fauna+One');
+          </style>
+          <Header />
+          <Route exact path="/" component={SelectPage} />
           <Route path="/customer" component={CustomerPage} />
           <Route path="/checkout" component={CheckoutPage} />
           <Route path="/admin" component={AdminPage} />

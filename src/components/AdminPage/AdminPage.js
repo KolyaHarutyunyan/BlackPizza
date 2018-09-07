@@ -47,7 +47,7 @@ class AdminPage extends Component {
                     <tbody>
                         {this.state.orders.map((order, i) => {
                             return (
-                                <tr>
+                                <tr key={i}>
                                     <td>{order.customer.name}</td>
                                     <td>{order.time}</td>
                                     <td>{order.type}</td>
