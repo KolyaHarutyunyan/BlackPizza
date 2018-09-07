@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import CheckoutTable from './CheckoutTable/CheckoutTable.js';
 import CheckoutHeader from './CheckoutHeader/CheckoutHeader.js';
 import CheckoutButton from './CheckoutButton/CheckoutButton.js';
+import './CheckOut.css';
 
 class CheckoutPage extends Component {
     constructor(props) {
@@ -18,13 +19,13 @@ class CheckoutPage extends Component {
 
     render() {
         return (
-            <div>
-                <div>
+           
+                <div className="checkoutContainer">
                     <CheckoutHeader />
                     <CheckoutTable />
                     <CheckoutButton history={this.props.history}/>
                 </div>
-            </div>
+            
         );
     }
 }
