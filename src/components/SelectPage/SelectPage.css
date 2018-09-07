@@ -22,6 +22,7 @@ p{
 .selectPageContainer{
     height: 90vh;
     width: 90vw;
+    min-width: 800px;
     position: relative;
     left: 5vw;
     border-radius: 50px;

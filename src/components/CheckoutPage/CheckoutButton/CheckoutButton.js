@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
-
+import '../CheckOut.css';
 
 
 class CheckoutButton extends Component {
@@ -28,7 +28,7 @@ class CheckoutButton extends Component {
     render() {
         return (
             <div>
-                <button onClick={this.handleCheckout}>Checkout</button>
+                <button className="checkoutBtn" onClick={this.handleCheckout}>Checkout</button>
             </div>
         );
     }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import CheckoutItem from '../CheckoutItem/CheckoutItem.js'
+import '../CheckOut.css';
 
 class CheckoutTable extends Component {
 

@@ -40,9 +40,9 @@ mongoimport --db pizza_parlor --collection pizzas --file pizza.csv --type csv --
 
 ###Next Steps
 
-- [] Allow users to navigate back before submitting order
-- [] Display a list of pizzas ordered on admin page
-- [] Add more pictures of pizzas
+- [ ] Allow users to navigate back before submitting order
+- [ ] Display a list of pizzas ordered on admin page
+- [ ] Add more pictures of pizzas
 
 ##Authors
 

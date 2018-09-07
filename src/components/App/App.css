@@ -9,6 +9,7 @@ body{
  height: 100vh;
  overflow-y: scroll;
  font-family: 'Fauna One', serif;
+ min-width: 800px;
 }
 .App-intro {
   font-size: large;
