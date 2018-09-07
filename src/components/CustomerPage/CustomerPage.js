@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import './CustomerPage.css';
 
 const customerFormObject = {
     customer: {
@@ -11,17 +12,11 @@ const customerFormObject = {
     pickOrDeliv: 'pickup',
 };//end customerFormObject
 
-
-
-
-
 class CustomerPage extends Component {
     constructor() {
         super();
         
-        this.state = customerFormObject;
-
-        
+        this.state = customerFormObject;        
     }
 
     handleOptionChange = (event) => {
@@ -98,7 +93,7 @@ class CustomerPage extends Component {
                             <input onChange={this.handleOptionChange} id="delvBtn" type="radio" value="delivery" name="pickOrDeliv" checked={this.state.pickOrDeliv === 'delivery'} required/>
                         </div>
                         <div className="submitSection">
-                            <button type="submit">Next</button>
+                            <button className="nextBtn" type="submit">Next</button>
                         </div>
                     </form>
                 </div>
